@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root {
+    --orange: #ff9500;
+    --light-gray: #d4d4d2;
+    --black: #000000;
+    --gray: #505050;
+    --background: #fcf8e9;
+}
+
+html {
+    background-color: var(--background);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    display: grid;
+    width: 300px;
+    height: 510px;
+    background: var(--black);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 15px 2px var(--black);
+}
+
+button {
+    font-family: Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.visor {
+    background: var(--black);
+    border-radius: 20px;
+    height: 120px;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 55px;
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px 20px;
+    grid-template-rows: 60px 60px;
+    padding-right: 10px;
+}
+
+p {
+    grid-column: 4/4;
+    grid-row: 2/2;
+    margin: 0;
+    padding-right: 5px;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: 68px 68px 68px 68px;
+    grid-template-rows: 68px 68px 68px 68px 68px;
+    grid-gap: 10px;
+}
+
+.botao {
+    background: var(--gray);
+    color: white;
+    font-size: 30px;
+    border-radius: 100px;
+    border: 0;
+}
+
+.zero {
+    grid-column: span 2;
+    background: var(--gray);
+}
+
+.cinza {
+    background: var(--light-gray);
+    color: var(--black);
+}
+
+.laranja {
+    background: var(--orange);
+}
