@@ -36,24 +36,16 @@ button {
     cursor: pointer;
 }
 
-.visor {
-    background: var(--black);
-    border-radius: 20px;
-    height: 120px;
-    color: white;
+.visor_input {
     font-family: Helvetica, sans-serif;
-    font-size: 55px;
-    display: grid;
-    grid-template-columns: 70px 70px 70px 70px 20px;
-    grid-template-rows: 60px 60px;
-    padding-right: 10px;
-}
-
-p {
-    grid-column: 4/4;
-    grid-row: 2/2;
+    background: var(--black);
+    color: white;
+    border: 0;
+    font-size: 50px;
+    text-align: right;
+    height: 120px;
+    width: 285px;
     margin: 0;
-    padding-right: 5px;
 }
 
 .botoes {
